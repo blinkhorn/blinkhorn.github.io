@@ -6,6 +6,7 @@ html, body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+  align-content: center;
 }
 
 .site-content {
@@ -17,7 +18,12 @@ header {
 }
 
 .logo {
+  display: block;
   margin: auto;
+}
+
+h2, .content {
+  text-align: center;
 }
 
 main {
@@ -27,5 +33,9 @@ main {
 
 footer {
   background: black;
+}
+
+.footer-content {
   color: white;
+  margin: 15px 10%;
 }
