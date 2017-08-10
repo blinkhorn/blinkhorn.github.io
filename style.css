@@ -1,0 +1,31 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+header {
+  background: black;
+}
+
+.logo {
+  margin: auto;
+}
+
+main {
+  background: white;
+  color: black;
+}
+
+footer {
+  background: black;
+  color: white;
+}
