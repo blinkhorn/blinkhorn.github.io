@@ -26,9 +26,18 @@ h2, .content {
   text-align: center;
 }
 
+.content, h4 {
+  text-transform: uppercase;
+}
+
 main {
   background: white;
   color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 footer {
