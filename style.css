@@ -29,6 +29,10 @@ h2, .content {
 .content, h4 {
   text-transform: uppercase;
 }
+ .vertical-line {
+   border-right: 1px solid gray;
+   padding-right: 5px;
+ }
 
 main {
   background: white;
@@ -47,4 +51,8 @@ footer {
 .footer-content {
   color: white;
   margin: 15px 10%;
+}
+
+.socials {
+  text-align: center;
 }
