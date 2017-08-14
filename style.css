@@ -31,6 +31,10 @@ h3, .content, .socials {
   text-align: center;
 }
 
+.underline-intro {
+  border-bottom: 1px solid gray;
+}
+
 .content, h4 {
   text-transform: uppercase;
 }
@@ -60,6 +64,7 @@ footer {
 
 .socials {
   text-align: center;
+  margin: 30px 0;
 }
 
 h4 {
@@ -73,8 +78,4 @@ h4 {
 
 .email, .socials, h4 {
   font-weight: 300;
-}
-
-.socials {
-  margin: 30px 0;
 }
