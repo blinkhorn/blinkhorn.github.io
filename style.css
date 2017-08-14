@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   height: 100%;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .site {
 	display: flex;
@@ -23,7 +23,11 @@ header {
   margin: auto;
 }
 
-h2, .content {
+h3, .content {
+  font-weight: 400;
+}
+
+h3, .content, .socials {
   text-align: center;
 }
 
@@ -56,4 +60,21 @@ footer {
 
 .socials {
   text-align: center;
+}
+
+h4 {
+  font-size: .95em;
+  margin: 30px 0 10px;
+}
+
+.email {
+  margin: 0;
+}
+
+.email, .socials, h4 {
+  font-weight: 300;
+}
+
+.socials {
+  margin: 30px 0;
 }
