@@ -38,10 +38,6 @@ h3, .content, .socials {
 .content, h4 {
   text-transform: uppercase;
 }
- .vertical-line {
-   border-right: 1px solid gray;
-   padding-right: 5px;
- }
 
 main {
   background: white;
@@ -78,4 +74,18 @@ h4 {
 
 .email, .socials, h4 {
   font-weight: 300;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+li:not(:first-child):before {
+    content: " | ";
 }
