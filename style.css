@@ -23,11 +23,11 @@ header {
   margin: auto;
 }
 
-h3, .content {
+h3, .content-nav {
   font-weight: 400;
 }
 
-h3, .content, .socials {
+h3, .content-nav, .socials {
   text-align: center;
 }
 
@@ -35,7 +35,7 @@ h3, .content, .socials {
   border-bottom: 1px solid gray;
 }
 
-.content, h4 {
+.content-nav, h4 {
   text-transform: uppercase;
 }
 
@@ -81,7 +81,7 @@ nav {
   padding: 0;
 }
 
-.social-links, .content-images {
+.social-links, .content-text {
     display: inline;
 }
 
@@ -89,6 +89,6 @@ nav {
     content: " | ";
 }
 
-.content-images:not(:first-child):before {
+.content-text:not(:first-child):before {
     content: " | ";
 }
