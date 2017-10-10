@@ -92,3 +92,15 @@ nav {
 .content-text:not(:first-child):before {
     content: " | ";
 }
+
+.music-visuals {
+  display: none;
+}
+
+.music-text:hover + .music-visuals {
+   display: block;
+}
+
+.music-text:hover + .code-visuals {
+   display: none;
+}
