@@ -1,6 +1,8 @@
 html, body {
   margin: 0;
+  padding: 0;
   height: 100%;
+  overflow-x: hidden;
   font-family: 'Lato', sans-serif;
 }
 .site {
@@ -23,19 +25,46 @@ header {
   margin: auto;
 }
 
-h3, .content {
+h3, .code-and-music {
   font-weight: 400;
 }
 
-h3, .content, .socials {
+h3, .code-and-music, .socials {
   text-align: center;
 }
 
-.underline-intro {
-  border-bottom: 1px solid gray;
+h3 {
+  font-size: 1.5em;
 }
 
-.content, h4 {
+.code-and-music {
+  display: flex;
+  justify-content: center;
+  margin: 60px;
+}
+
+.code, .music {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ .content-images {
+  min-width: 38vh;
+  min-height: 38vh;
+  width: 300px;
+  height: 300px;
+  margin: 10px
+}
+
+.image-container {
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.code-and-music, h4 {
   text-transform: uppercase;
 }
 
@@ -49,13 +78,18 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: white;
+}
+
 footer {
   background: black;
+  margin: 30px 0 0;
 }
 
 .footer-content {
-  color: white;
-  margin: 15px 10%;
+  color: rgba(255,255,255,0.65);
+  margin: 50px 10%;
 }
 
 .socials {
@@ -64,8 +98,13 @@ footer {
 }
 
 h4 {
-  font-size: .95em;
+  font-size: 0.98em;
   margin: 30px 0 10px;
+  color: white;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 .email {
@@ -76,12 +115,12 @@ h4 {
   font-weight: 300;
 }
 
-nav {
+.code-and-music {
   margin: 0;
   padding: 0;
 }
 
-.social-links, .content-images {
+.social-links, .content-text {
     display: inline;
 }
 
@@ -89,6 +128,7 @@ nav {
     content: " | ";
 }
 
-.content-images:not(:first-child):before {
-    content: " | ";
+.music, .code {
+  width: 80%;
+  height: 50%;
 }
