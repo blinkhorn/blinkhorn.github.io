@@ -25,15 +25,19 @@ header {
   margin: auto;
 }
 
-h3, .content-nav {
+h3, .code-and-music {
   font-weight: 400;
 }
 
-h3, .content-nav, .socials {
+h3, .code-and-music, .socials {
   text-align: center;
 }
 
-.content-nav {
+h3 {
+  font-size: 1.5em;
+}
+
+.code-and-music {
   display: flex;
   justify-content: center;
   margin: 60px;
@@ -48,7 +52,9 @@ h3, .content-nav, .socials {
  .content-images {
   max-width: 38vh;
   max-height: 38vh;
-  margin: 10px
+  width: 300px;
+  height: 300px;
+  margin: 10px;
 }
 
 .image-container {
@@ -58,11 +64,7 @@ h3, .content-nav, .socials {
   justify-content: center;
 }
 
-.underline-intro {
-  border-bottom: 1px solid gray;
-}
-
-.content-nav, h4 {
+.code-and-music, h4 {
   text-transform: uppercase;
 }
 
@@ -82,6 +84,7 @@ a:hover {
 
 footer {
   background: black;
+  margin: 30px 0 0;
 }
 
 .footer-content {
@@ -112,7 +115,7 @@ p {
   font-weight: 300;
 }
 
-nav {
+.code-and-music {
   margin: 0;
   padding: 0;
 }
@@ -123,20 +126,6 @@ nav {
 
 .social-links:not(:first-child):before {
     content: " | ";
-}
-
-.content-text:not(:first-child):before {
-    content: " | ";
-}
-
-
-
-.music-text:hover + .music-images {
-   display: block;
-}
-
-.music-text:hover + .code-images {
-   display: none;
 }
 
 .music, .code {
