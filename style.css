@@ -5,6 +5,7 @@ html, body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
 }
+
 .site {
 	display: flex;
 	min-height: 100vh;
@@ -131,4 +132,28 @@ p {
 .music, .code {
   width: 80%;
   height: 50%;
+}
+
+/* ----------- Phones, tablets, and Handhelds ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen
+  and (max-device-width: 1112px) {
+    .content-images {
+     min-width: 20vh;
+     min-height: 20vh;
+     width: 300px;
+     height: 300px;
+     margin: 20px
+   }
+
+   h3 {
+     font-size: 1.8em;
+   }
+
+   p {
+     font-size: 1.7em;
+   }
 }
