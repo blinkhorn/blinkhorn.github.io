@@ -4,6 +4,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+  overflow-y: scroll;
 }
 
 .site {
@@ -11,6 +12,7 @@ html, body {
 	min-height: 100vh;
 	flex-direction: column;
   align-content: center;
+  -webkit-overflow-scrolling: touch;
 }
 
 .site-content {
