@@ -114,17 +114,13 @@ p {
   margin: 0;
 }
 
-.email, .socials, h4 {
+.email, .social-links, h4 {
   font-weight: 300;
 }
 
 .code-and-music {
   margin: 0;
   padding: 0;
-}
-
-.social-links, .content-text {
-    display: inline;
 }
 
 .social-links:not(:first-child):before {
@@ -136,13 +132,14 @@ p {
   height: 50%;
 }
 
-/* ----------- Phones, tablets, and Handhelds ----------- */
+/* ----------- Phones, handhelds, and tablets ----------- */
 
 
 /* Portrait and Landscape */
 
 @media only screen
   and (max-device-width: 1112px) {
+
     .content-images {
      min-width: 20vh;
      min-height: 20vh;
@@ -157,5 +154,9 @@ p {
 
    p {
      font-size: 1.7em;
+   }
+
+   .email, .social-links, h4 {
+     font-weight: 400;
    }
 }
