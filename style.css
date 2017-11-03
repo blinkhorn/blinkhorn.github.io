@@ -19,8 +19,41 @@ html, body {
   flex: 1;
 }
 
-header {
+
+.main-nav, header {
   background: black;
+}
+
+.about-me-wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.about-me {
+  text-align: center;
+  width: 30%;
+}
+
+.about-me a {
+  color: #808080;
+  text-decoration: underline;
+}
+
+.about-me a:hover {
+  color: black;
+}
+
+.main-nav {
+  padding-right: 10%;
+  padding-top: 4%;
+  text-align: right;
+}
+
+.main-nav-item {
+  text-decoration: underline;
+  color: rgba(255,255,255,0.65);
+  margin: 2px 20px;
 }
 
 .logo {
@@ -75,7 +108,13 @@ h3 {
 }
 
 .img-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  font-size: 16px;
+  text-transform: none;
   top: 30px;
   bottom: 0;
   left: 60px;
@@ -88,12 +127,20 @@ h3 {
   transition: opacity .2s, visibility .2s;
 }
 
+.project-links-area {
+  display: inline;
+}
+
+.project-links {
+  color: rgba(255,255,255,0.65);
+}
+
 .img-wrap:hover .img-description {
   visibility: visible;
   opacity: 1;
 }
 
-.code, h4 {
+.code, h4{
   text-transform: uppercase;
 }
 
@@ -156,7 +203,7 @@ p {
   padding: 0;
 }
 
-.social-links:not(:first-child):before {
+.social-links:not(:first-child):before, .project-links:not(:first-child):before {
     content: " | ";
 }
 
