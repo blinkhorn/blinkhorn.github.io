@@ -54,6 +54,7 @@ html, body {
   text-decoration: underline;
   color: rgba(255,255,255,0.65);
   margin: 2px 20px;
+  font-size: 1.2em;
 }
 
 .logo {
@@ -180,8 +181,9 @@ h4 {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin: 10px 0 0;
+  font-weight: bold;
 }
 
 .sub-heading {
