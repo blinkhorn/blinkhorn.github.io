@@ -244,17 +244,18 @@ p {
 
    .main-nav-item {
      border-bottom: 2px solid;
+     font-size: 2.8em;
    }
 
    .email {
-     font-size: 0.87em;
+     font-size: 2em;
    }
 
    .social-links {
-     font-size: 1.85em;
+     font-size: 1.95em;
    }
 
    .footer-content h4 {
-     font-size: 0.85em;
+     font-size: 2em;
    }
 }
