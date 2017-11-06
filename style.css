@@ -19,20 +19,22 @@ html, body {
   flex: 1;
 }
 
-
-.main-nav, header {
-  background: black;
+header {
+  background: #1B3885;
 }
 
 .about-me-wrapper {
   display: flex;
-  text-align: center;
   justify-content: center;
 }
 
-.about-me {
+.about-me-image, .resume {
   text-align: center;
-  width: 30%;
+}
+
+.about-me {
+  text-align: left;
+  width: 80%;
 }
 
 .about-me a {
@@ -45,16 +47,20 @@ html, body {
 }
 
 .main-nav {
+  background: black;
   padding-right: 10%;
-  padding-top: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   text-align: right;
+  border: none;
 }
 
 .main-nav-item {
-  text-decoration: underline;
-  color: rgba(255,255,255,0.65);
+  display: inline;
+  border-bottom: 1px solid;
+  color: #AEAEAE;
   margin: 2px 20px;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .logo {
@@ -72,6 +78,7 @@ h3, .code, .socials {
 
 h3 {
   font-size: 1.5em;
+  margin: 1em 4em;
 }
 
 .code {
@@ -86,8 +93,6 @@ h3 {
 }
 
  .content-images {
-  min-width: 38vh;
-  min-height: 38vh;
   width: 400px;
   height: 400px;
   margin: 30px;
@@ -96,10 +101,15 @@ h3 {
 .image-container {
   display: flex;
   margin: 10px;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   min-width: 38vh;
   min-height: 38vh;
@@ -116,12 +126,14 @@ h3 {
   position: absolute;
   font-size: 16px;
   text-transform: none;
-  top: 30px;
-  bottom: 0;
-  left: 60px;
+  top: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 80%;
+  height: 80%;
   right: auto;
   text-align: center;
-  background: rgba(29, 106, 154, 0.72);
+  background: rgba(29, 58, 131, 0.85);
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -133,7 +145,7 @@ h3 {
 }
 
 .project-links {
-  color: rgba(255,255,255,0.65);
+  color: #AEAEAE;
 }
 
 .img-wrap:hover .img-description {
@@ -141,7 +153,7 @@ h3 {
   opacity: 1;
 }
 
-.code, h4{
+.code, .footer-content h4 {
   text-transform: uppercase;
 }
 
@@ -160,12 +172,12 @@ a:hover {
 }
 
 footer {
-  background: black;
+  background: #1B3885;
   margin: 30px 0 0;
 }
 
 .footer-content {
-  color: rgba(255,255,255,0.65);
+  color: #AEAEAE;
   margin: 50px 10%;
 }
 
@@ -174,8 +186,8 @@ footer {
   margin: 30px 0;
 }
 
-h4 {
-  font-size: 0.98em;
+.footer-content h4 {
+  font-size: 1.1em;
   margin: 30px 0 10px;
   color: white;
 }
@@ -187,9 +199,13 @@ p {
 }
 
 .sub-heading {
-  font-size: 0.85em;
   margin: 15px 0 0;
+  font-size: 1em;
   text-decoration: underline;
+}
+
+.social-links, .email {
+  font-size: 1.18em;
 }
 
 .email {
@@ -223,22 +239,50 @@ p {
   and (max-device-width: 1112px) {
 
     .content-images {
-     min-width: 20vh;
-     min-height: 20vh;
-     width: 300px;
-     height: 300px;
-     margin: 20px
+     min-width: 30vh;
+     min-height: 30vh;
+     margin: 20px;
+   }
+
+   .img-wrap {
+     min-width: 30vh;
+     min-height: 30vh;
+     margin: 20px;
+   }
+
+   .img-description {
+      font-size: 32px;
    }
 
    h3 {
-     font-size: 1.8em;
-   }
-
-   p {
      font-size: 1.7em;
    }
 
-   .email, .social-links, h4 {
+   p {
+     font-size: 2em;
+   }
+
+   .sub-heading {
+     font-size: 1.5em;
+   }
+
+   .email, .social-links {
      font-weight: 400;
+   }
+
+   .main-nav-item {
+     border-bottom: 2px solid;
+   }
+
+   .email {
+     font-size: 0.87em;
+   }
+
+   .social-links {
+     font-size: 1.85em;
+   }
+
+   .footer-content h4 {
+     font-size: 0.85em;
    }
 }
