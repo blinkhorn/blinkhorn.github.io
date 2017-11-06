@@ -1,0 +1,167 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  overflow-y: scroll;
+}
+
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+  align-content: center;
+  -webkit-overflow-scrolling: touch;
+}
+
+.site-content {
+  flex: 1;
+}
+
+header {
+  background: #1B3885;
+}
+
+.about-me-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-image, .resume {
+  text-align: center;
+}
+
+.about-me {
+  text-align: left;
+  width: 80%;
+}
+
+.about-me a {
+  color: #808080;
+  text-decoration: underline;
+}
+
+.about-me a:hover {
+  color: black;
+}
+
+.main-nav {
+  background: black;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: right;
+  border: none;
+}
+
+.main-nav-item {
+  display: inline;
+  border-bottom: 1px solid;
+  color: #AEAEAE;
+  margin: 2px 20px;
+  font-size: 1.3em;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+}
+
+.socials {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.footer-content h4 {
+  text-transform: uppercase;
+}
+
+main {
+  background: white;
+  color: black;
+}
+
+.social-links, .email {
+  font-size: 1.18em;
+}
+
+.email {
+  margin: 0;
+}
+
+.email, .social-links, h4 {
+  font-weight: 300;
+}
+
+.social-links:not(:first-child):before, .project-links:not(:first-child):before {
+    content: " | ";
+}
+
+p {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: white;
+}
+
+footer {
+  background: #1B3885;
+  margin: 30px 0 0;
+}
+
+.footer-content {
+  color: #AEAEAE;
+  margin: 50px 10%;
+}
+
+
+.footer-content h4 {
+  font-size: 1.1em;
+  margin: 30px 0 10px;
+  color: white;
+}
+
+/* ----------- Phones, handhelds, and tablets ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen
+  and (max-device-width: 1112px) {
+
+   h3 {
+     font-size: 1.7em;
+   }
+
+   p {
+     font-size: 2em;
+   }
+
+   .email, .social-links {
+     font-weight: 400;
+   }
+
+   .main-nav-item {
+     border-bottom: 2px solid;
+     font-size: 2.8em;
+   }
+
+   .email {
+     font-size: 0.87em;
+   }
+
+   .social-links {
+     font-size: 1.85em;
+   }
+
+   .footer-content h4 {
+     font-size: 0.85em;
+   }
+}

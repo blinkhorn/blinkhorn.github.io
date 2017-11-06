@@ -23,29 +23,6 @@ header {
   background: #1B3885;
 }
 
-.about-me-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.about-me-image, .resume {
-  text-align: center;
-}
-
-.about-me {
-  text-align: left;
-  width: 80%;
-}
-
-.about-me a {
-  color: #808080;
-  text-decoration: underline;
-}
-
-.about-me a:hover {
-  color: black;
-}
-
 .main-nav {
   background: black;
   padding-right: 10%;
@@ -181,15 +158,15 @@ footer {
   margin: 50px 10%;
 }
 
-.socials {
-  text-align: center;
-  margin: 30px 0;
-}
-
 .footer-content h4 {
   font-size: 1.1em;
   margin: 30px 0 10px;
   color: white;
+}
+
+.socials {
+  text-align: center;
+  margin: 30px 0;
 }
 
 p {
@@ -214,11 +191,6 @@ p {
 
 .email, .social-links, h4 {
   font-weight: 300;
-}
-
-.code {
-  margin: 0;
-  padding: 0;
 }
 
 .social-links:not(:first-child):before, .project-links:not(:first-child):before {
