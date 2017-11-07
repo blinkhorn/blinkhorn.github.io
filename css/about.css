@@ -28,6 +28,10 @@ header {
   justify-content: center;
 }
 
+.about-me-image {
+  margin: 2% 0 0;
+}
+
 .about-me-image, .resume {
   text-align: center;
 }
